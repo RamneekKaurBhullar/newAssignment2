@@ -58,7 +58,8 @@ public class MovieTest {
      * Test of setMovieName method, of class Movie.
      */
     @Test
-    public void testSetMovieName() {
+    public void testSetMovieName() 
+    {
        validMovie.setMovieName("Ranchi");
        String result = validMovie.getMovieName();
        assertEquals("Ranchi",result);   
@@ -83,7 +84,8 @@ public class MovieTest {
      * Test of getLanguage method, of class Movie.
      */
     @Test
-    public void testGetLanguage() {
+    public void testGetLanguage() 
+    {
        String expResult = "Hindi";
        String result = validMovie.getLanguage();
        assertEquals(expResult, result);
@@ -94,7 +96,8 @@ public class MovieTest {
      * Test of setLanguage method, of class Movie.
      */
     @Test
-    public void testSetLanguage() {
+    public void testSetLanguage() 
+    {
          validMovie.setLanguage("English");
         assertEquals("English", validMovie.getLanguage());
     }
@@ -131,7 +134,7 @@ public class MovieTest {
      */
     @Test
     public void testSetReleaseDate() {
-        LocalDate releaseDate = LocalDate.of(2011, Month.JULY, 10);
+        LocalDate releaseDate = LocalDate.of(2017, Month.DECEMBER, 5);
         validMovie.setReleaseDate(releaseDate);
         assertEquals(releaseDate, validMovie.getReleaseDate());
     }

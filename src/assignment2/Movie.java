@@ -79,7 +79,7 @@ public class Movie {
             releaseDate.isBefore(LocalDate.now()))
             this.releaseDate = releaseDate;
    else
-     throw new IllegalArgumentException("Release date should be after year 2005 ");
+     throw new IllegalArgumentException("Release date should be after year 2004");
     }
     /**
      * get set method for production house
